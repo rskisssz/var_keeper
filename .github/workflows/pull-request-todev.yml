@@ -15,7 +15,7 @@ jobs:
       - name: Install requirements
         run: |
           source venv/bin/activate
-          pip install -r requirements.txt
+          pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org -r requirements.txt
       - name: Run app
         run: |
           source venv/bin/activate
